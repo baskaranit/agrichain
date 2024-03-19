@@ -31,7 +31,6 @@ function Add({ history, match }) {
     function createUser(data) {
         return productService.create(data)
             .then(() => {
-                alert('in')
                 alertService.success('User added', { keepAfterRouteChange: true });
                 history.push('.');
             })

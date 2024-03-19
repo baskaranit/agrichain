@@ -41,12 +41,6 @@ class Product(object):
         return self.db.find_by_id(id, self.collection_name)
 
     def update(self, id, todo):
-        print("====== update required fields ======")
-        print(self.update_required_fields)
-        print("====== update optional fields ======")
-        print(self.update_optional_fields)
-        print("====== update required fields ======")
-        print(self.fields)
         self.validator.validate(todo, self.fields, self.update_required_fields, self.update_optional_fields)
         res =  self.db.update(id, todo,self.collection_name)
         return { "msg": "Data Updated", "Id":res }

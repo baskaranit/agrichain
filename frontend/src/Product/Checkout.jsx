@@ -24,7 +24,6 @@ function Checkout({ match }) {
             .then((response) => {
                 let totalPrice = 0;
                 var myData = Object.keys(response).map(key => {
-                    console.log(response[key])
                     totalPrice += parseInt(response[key].price)
                     return response[key];
                 });

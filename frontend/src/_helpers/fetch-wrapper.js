@@ -35,7 +35,6 @@ function _delete(url) {
     const requestOptions = {
         method: 'DELETE'
     };
-    console.log(url)
     return fetch(url, requestOptions)
     .then(handleResponse)
     .catch(function (error){
