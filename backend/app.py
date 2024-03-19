@@ -28,7 +28,6 @@ def process_checkout():
                 productInfoFromMongo  = filter_products_by_name(products,productName)
                 if len(productInfoFromMongo) > 0:
                     responseData[index] = {}
-                    print(productInfoFromMongo["discount"])
                     responseData[index]['name'] = productName
                     responseData[index]["price"] = 0
                     productPrice  = productInfoFromMongo["price"]
