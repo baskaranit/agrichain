@@ -1,0 +1,8 @@
+{
+    "db": {
+            "url" : "mongodb+srv://admin:Chella123@cluster0.qvyj8.mongodb.net/todo",
+            "name" :"todo",
+            "user" :"",
+            "password" :""
+    }
+}
